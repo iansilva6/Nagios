@@ -36,7 +36,7 @@ Crie um novo usuário do ***nagios***
 	useradd -m nagios
 	passwd nagios
 
-Crie um novo grupo de ***nagcmd*** para permitir que comandos externos sejam enviados através da interface web. Adicione o usuário nagios e o usuário do apache ao grupo.
+Crie um novo grupo de usuários ***nagcmd*** para permitir que comandos externos sejam enviados através da interface web. Adicione o usuário nagios e o usuário do apache ao grupo.
 
 	sudo groupadd nagcmd
 	sudo usermod -a -G nagcmd nagios
