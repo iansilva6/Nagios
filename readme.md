@@ -198,7 +198,7 @@ Aqui esta um exemplo da página de administração do Nagios:
 
 ![](http://www.unixmen.com/wp-content/uploads/2015/11/Nagios-Core-Google-Chrome_002.jpg)
 
-Clique na seção de **"Hosts"** no painel esquerdo. Você verá os hosts que estão sendo monitorados pelo servidor Nagios. Nós ainda não adicionou nenhum host. Então ele simplesmente monitora o localhost apenas.
+Clique na seção de **"Hosts"** no painel esquerdo. Você verá os hosts que estão sendo monitorados pelo servidor Nagios. Nós ainda não adicionou nenhum host. Então monitora o localhost apenas.
 
 ![](http://www.unixmen.com/wp-content/uploads/2015/11/Nagios-Core-Google-Chrome_003.jpg)
 
