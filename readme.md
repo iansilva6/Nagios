@@ -2,6 +2,11 @@
 
 Tutorial baseado no seguinte [post](http://www.unixmen.com/how-to-install-nagios-core-4-1-1-in-ubuntu-15-10/).
 
+Outros posts que foram úteis:  
+
+- [https://assets.nagios.com/downloads/nagioscore/docs/nagioscore/4/en/eventhandlers.html](https://assets.nagios.com/downloads/nagioscore/docs/nagioscore/4/en/eventhandlers.html)
+- [https://thiagolucas.wordpress.com/2014/03/28/nagios-debian-instalacao-detalhada/](https://thiagolucas.wordpress.com/2014/03/28/nagios-debian-instalacao-detalhada/)
+
 > Nagios é sistema, que pode ser usado para monitoramento de infraestrutura de rede. Usando Nagios, podemos monitorar servidores, switches, aplicações e serviços etc. Alertar o administrador do sistema quando algo der errado e também alertar quando esses erros forem corrigidos.
 
 ## Principais funcionaliades ###
