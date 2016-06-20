@@ -2,7 +2,7 @@
 
 Tutorial baseado no seguinte [post](http://www.unixmen.com/how-to-install-nagios-core-4-1-1-in-ubuntu-15-10/).
 
-> Nagios é sistema, que pode ser usado para monitoramento de infra-estrutura de rede. Usando Nagios, podemos monitorar servidores, switches, aplicações e serviços etc. Alerta o administrador do sistema quando algo der errado e também alertas quando esses erros tenham sido corrigidos.
+> Nagios é sistema, que pode ser usado para monitoramento de infraestrutura de rede. Usando Nagios, podemos monitorar servidores, switches, aplicações e serviços etc. Alertar o administrador do sistema quando algo der errado e também alertar quando esses erros forem corrigidos.
 
 ## Principais funcionaliades ###
 
@@ -239,7 +239,7 @@ e remova o comentário da seguinte linha
 	## Encontre e remova o comentário da seguinte linha ##
 	cfg_dir=/usr/local/nagios/etc/servers
 
-Crie um diretório chamado **"servers"** dentro da pasta "/usr/local/nagios/etc/"
+Crie um diretório chamado **"servers"** dentro da pasta **"/usr/local/nagios/etc/"**
 
 	mkdir /usr/local/nagios/etc/servers
 
