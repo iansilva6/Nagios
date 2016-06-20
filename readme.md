@@ -2,9 +2,9 @@
 
 Tutorial baseado no seguinte [post](http://www.unixmen.com/how-to-install-nagios-core-4-1-1-in-ubuntu-15-10/).
 
-> Nagios é sistema, que pode ser usado para monitoramento de infra-estrutura de rede. Usando Nagios, podemos >monitorar servidores, switches, aplicações e serviços etc. Alerta o administrador do sistema quando algo der errado e também alertas quando esses erros tenham sido corrigidos.
+> Nagios é sistema, que pode ser usado para monitoramento de infra-estrutura de rede. Usando Nagios, podemos monitorar servidores, switches, aplicações e serviços etc. Alerta o administrador do sistema quando algo der errado e também alertas quando esses erros tenham sido corrigidos.
 
-## Funcionaliades ###
+## Principais funcionaliades ###
 
 - Monitorar toda sua infraestrutura de ti.
 - Identify problems before they occur.
@@ -204,4 +204,88 @@ Clique no *localhost* para exibir mais detalhes
 ![](http://www.unixmen.com/wp-content/uploads/2015/11/Nagios-Core-Google-Chrome_004.jpg)
 
 
-É isso, instalamos e configuramos o Nagios! 
+É isso, instalamos e configuramos o Nagios!
+
+## Adicionar clintes monitorados ao servidor Nagios ##
+
+Agora, vamos adicionar alguns clientes para serem monitorados pelo servidor Nagios.
+Para isso precisamos instalar o **nrpe** e o **nagios-plugin** em nossos alvos de monitoramento.
+
+### No Debian/Linux ###
+
+	apt-get update
+	apt-get install nagios-nrpe-server nagios-plugins
+
+Configure os alvos de monitoramento
+
+Edite o arquivo **/etc/nagios/nrpe.cfg**,
+
+	nano /etc/nagios/nrpe.cfg
+
+Adicione o ip do seu servidor Nagios:
+
+	[...]
+	## Encontre as seguintes linhas e adicione o ip do servidor Nagios ##
+	allowed_hosts=127.0.0.1 192.168.1.103
+	[...]
+	
+Inicie o serviço nrpe:
+
+	/etc/init.d/nagios-nrpe-server restart
+
+Agora, **volte ao Nagios server** e adicionei os clientes (no arquivo de configuração).
+Para tal, Edite o arquivo **"/usr/local/nagios/etc/nagios.cfg"**,
+
+	nano /usr/local/nagios/etc/nagios.cfg
+
+e remova o comentário da seguinte linha
+
+	## Encontre e remova o comentário da seguinte da seguinte linha ##
+	cfg_dir=/usr/local/nagios/etc/servers
+
+Crie um diretório chamado **"servers"** dentro da pasta "/usr/local/nagios/etc/"
+
+	mkdir /usr/local/nagios/etc/servers
+
+Crie um arquivo de configuração para monitorar o cliente:
+
+	nano /usr/local/nagios/etc/servers/clients.cfg
+
+Adicione as seguintes linhas:
+
+	define host{
+	
+	use                             linux-server
+	
+	host_name                       server.unixmen.local
+	
+	alias                           server
+	
+	address                         192.168.1.104 ##informe o ip do seu client aqui
+	
+	max_check_attempts              5
+	
+	check_period                    24x7
+	
+	notification_interval           30
+	
+	notification_period             24x7
+	
+	}  
+
+Nesse caso, **192.168.1.104** é o ip do meu cliente Nagios e server.unixmen.local é o hostname.
+
+Por fim, reinicie o serviço do nagios.
+
+	service nagios restart
+
+Aguarde alguns segundos, e atualize a página administrativa do nagios no browser e navegue até a sessão de **hosts** no painel da esquerda. Agora, você verá o cliente que foi adicionado recentemente. Click nele para visualizer se tem alguma coisa errada ou algum alerta.
+
+![](http://www.unixmen.com/wp-content/uploads/2015/11/Nagios-Core-Google-Chrome_005.jpg) 
+
+Click no cliente para visualizar informações detalhadas:
+
+![](http://www.unixmen.com/wp-content/uploads/2015/11/Nagios-Core-Google-Chrome_006.jpg)
+
+Da mesma forma, você pode definir mais clientes criando um arquivos de configuração separados para cada cliente. 
+Definindo serviços  
