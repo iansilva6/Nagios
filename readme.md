@@ -198,7 +198,7 @@ Aqui esta um exemplo da página de administração do Nagios:
 
 ![](http://www.unixmen.com/wp-content/uploads/2015/11/Nagios-Core-Google-Chrome_002.jpg)
 
-Clique na seção de **"Hosts"** no painel esquerdo. Você verá os hosts que estão sendo monitorados pelo servidor Nagios. Nós ainda não adicionamos nenhum host. Então apenas o localhost será exibido na listagem.
+Clique na seção de **"Hosts"** no painel esquerdo. Você verá os hosts que estão sendo monitorados pelo servidor Nagios. Nós ainda não adicionamos nenhum host. Então apenas o localhost será exibido na lista.
 
 ![](http://www.unixmen.com/wp-content/uploads/2015/11/Nagios-Core-Google-Chrome_003.jpg)
 
@@ -306,6 +306,6 @@ Adicione as seguintes linhas:
 
 	service nagios restart
 
-Aguarde alguns segundos (**90** segundos por padrão), e verifique pelos serviços adicionados (exemplo: ssh) na interface web do nagios. Navegue para a sessão **Services** no menu esquerdo, você verá o serviço **ssh** na listagem.
+Aguarde alguns segundos (**90** segundos por padrão), e verifique pelos serviços adicionados (exemplo: ssh) na interface web do nagios. Navegue para a sessão **Services** no menu esquerdo, você verá o serviço **ssh** na lista.
 
 ![](http://www.unixmen.com/wp-content/uploads/2015/11/Nagios-Core-Google-Chrome_007.jpg)
