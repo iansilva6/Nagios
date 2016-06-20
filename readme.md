@@ -54,7 +54,7 @@ Vá para a página do [Nagios](https://www.nagios.org/downloads/nagios-core/than
 
 	wget https://assets.nagios.com/downloads/nagioscore/releases/nagios-4.1.1.tar.gz
 
-E, baixe também os [plugins](https://www.nagios.org/downloads/nagios-plugins/) do nagios
+E baixe também os [plugins](https://www.nagios.org/downloads/nagios-plugins/) do nagios
 
 	wget http://www.nagios-plugins.org/download/nagios-plugins-2.1.1.tar.gz
 
@@ -62,7 +62,7 @@ E, baixe também os [plugins](https://www.nagios.org/downloads/nagios-plugins/) 
 
 ### Instalar Nagios ###
 
-Va até a pasta onde baixou o nagios, e extraia os arquivos:
+Va até a pasta onde baixou o nagios e extraia os arquivos:
 
 	tar xzf nagios-4.1.1.tar.gz
 
