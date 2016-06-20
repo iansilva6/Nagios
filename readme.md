@@ -240,7 +240,7 @@ Para tal, Edite o arquivo **"/usr/local/nagios/etc/nagios.cfg"**,
 
 e remova o comentário da seguinte linha
 
-	## Encontre e remova o comentário da seguinte da seguinte linha ##
+	## Encontre e remova o comentário da seguinte linha ##
 	cfg_dir=/usr/local/nagios/etc/servers
 
 Crie um diretório chamado **"servers"** dentro da pasta "/usr/local/nagios/etc/"
