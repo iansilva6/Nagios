@@ -9,7 +9,7 @@ Outros posts que foram úteis:
 
 > Nagios é sistema, que pode ser usado para monitoramento de infraestrutura de rede. Usando Nagios, podemos monitorar servidores, switches, aplicações e serviços etc. Alertar o administrador do sistema quando algo der errado e também alertar quando esses erros forem corrigidos.
 
-## Principais funcionaliades ###
+## Principais funcionalidades ###
 
 - Monitorar toda sua infraestrutura de TI.
 - Saber imediatamente quando problemas surgirem
