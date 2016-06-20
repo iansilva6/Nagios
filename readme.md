@@ -256,19 +256,12 @@ Adicione as seguintes linhas:
 	define host{
 	
 	use                             linux-server
-	
 	host_name                       server.unixmen.local
-	
 	alias                           server
-	
 	address                         192.168.1.104 ##informe o ip do seu client aqui
-	
 	max_check_attempts              5
-	
 	check_period                    24x7
-	
 	notification_interval           30
-	
 	notification_period             24x7
 	
 	}  
@@ -288,4 +281,30 @@ Click no cliente para visualizar informações detalhadas:
 ![](http://www.unixmen.com/wp-content/uploads/2015/11/Nagios-Core-Google-Chrome_006.jpg)
 
 Da mesma forma, você pode definir mais clientes criando um arquivos de configuração separados para cada cliente. 
-Definindo serviços  
+
+### Definindo serviço ###
+
+Acabamos de definir um cliente para ser monitorado. Agora, vamos adicionar alguns serviços do cliente. Por exemplo, para monitor o serviço **ssh** por exemplo, adicione as seguintes linhas no arquivo **"/usr/local/nagios/etc/servers/clients.cfg"**.
+
+	nano /usr/local/nagios/etc/services/clients.cfg
+
+Adicione as seguintes linhas:
+	
+
+	[...]
+	##ADICIONE AS LINHAS ABAIXO \/
+	define service {
+        use                             generic-service
+        host_name                       server.unixmen.local
+        service_description             SSH
+        check_command                   check_ssh
+        notifications_enabled           0
+    }
+
+ Salve e feche o arquivo. Reinicie o Nagios.
+
+	service nagios restart
+
+Aguarde alguns segundos (**90** segundos por padrão), e verifique pelos serviços adicionados (exemplo: ssh) na interface web do nagios. Navegue para a sessão **Services** no menu esquerdo, você verá o serviço **ssh** ai.
+
+![](http://www.unixmen.com/wp-content/uploads/2015/11/Nagios-Core-Google-Chrome_007.jpg)
