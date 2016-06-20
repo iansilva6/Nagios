@@ -214,9 +214,7 @@ Para isso precisamos instalar o **nrpe** e o **nagios-plugin** em nossos alvos d
 	apt-get update
 	apt-get install nagios-nrpe-server nagios-plugins
 
-Configure os alvos de monitoramento
-
-Edite o arquivo **/etc/nagios/nrpe.cfg**,
+Configure os alvos de monitoramento, edite o arquivo **/etc/nagios/nrpe.cfg**,
 
 	nano /etc/nagios/nrpe.cfg
 
