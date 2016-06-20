@@ -87,7 +87,7 @@ Caso o seguinte erro ocorra:
 > Makefile:296: recipe for target 'install-webconf' failed
 > make: *** [install-webconf] Error 1
 
-A mensagem de erro a cima descreve que o nagios está tentando criar o arquivo **nagios.conf** dentro do diretório **/etc/httpd.conf/ **. Mas em sistemas derivados do Ubuntu o **nagios.conf** deve ser colocado no diretório /etc/apache2/sites-enabled/
+A mensagem de erro a cima descreve que o nagios está tentando criar o arquivo **nagios.conf** dentro do diretório **/etc/httpd.conf/**. Mas em sistemas derivados do Ubuntu o **nagios.conf** deve ser colocado no diretório /etc/apache2/sites-enabled/
 
 Para tal, execute o seguinte comando no lugar do **make install-webconf**.
 
