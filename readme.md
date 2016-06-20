@@ -6,13 +6,11 @@ Tutorial baseado no seguinte [post](http://www.unixmen.com/how-to-install-nagios
 
 ## Principais funcionaliades ###
 
-- Monitorar toda sua infraestrutura de ti.
-- Identify problems before they occur.
-- Identificar problemas antes que eles aconteçam
+- Monitorar toda sua infraestrutura de TI.
 - Saber imediatamente quando problemas surgirem
 - Compartilhar dados de disponibilidade com as partes interessadas
 - Detectar violações de segurança
-- Planos e orçamento para upgrades de TE.
+- Planos e orçamento para atualizações na infraestrutura de TI.
 - Reduza as perdas de tempo de inatividade e negócios.
 
 ## Pré-requisitos ###
