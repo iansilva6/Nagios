@@ -58,6 +58,10 @@ E baixe também os [plugins](https://www.nagios.org/downloads/nagios-plugins/) d
 
 	wget http://www.nagios-plugins.org/download/nagios-plugins-2.1.1.tar.gz
 
+Caso algum erro relacionado a certificados ocorra durante a executação do **wget**, execute utilizando o parâmetro **--no-check-certificate**
+
+	wget --no-check-certificate link
+
 ## Instalar Nagios e Plugins ##
 
 ### Instalar Nagios ###
@@ -151,8 +155,9 @@ Encontre a linha a seguir e informe o seu e-mail:
 	 }  
 	 [...]
 
-Save and close the file.
+Salve e feche o arquivo.
 
+<!--
 Então, edite o arquivo **/etc/apache2/sites-enabled/nagios-conf**
 
 	nano /etc/apache2/sites-enabled/nagios.conf
@@ -170,6 +175,7 @@ E edite as seguintes linhas se você desejar acessar o nagios console administra
 	Deny from all
 	Allow from 127.0.0.1 192.168.1.0/24 #seu ip vai aqui
 	[...]
+-->
 
 Habilitar os módulos do Apache e reconfiguração e cgi
 
