@@ -106,7 +106,7 @@ Verifique se o **nagios.conf** está no diretório /etc/apache2/sites-enabled.
 
 	ls -l /etc/apache2/sites-enabled/
 
-O output desse comando deve ser semelhante a:
+O output desse comando deve ser semelhante a este:
 
 >total 4  
 lrwxrwxrwx 1 root root 35 Nov 28 16:49 000-default.conf -../sites-available/000-default.conf   
