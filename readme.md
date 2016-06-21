@@ -194,6 +194,36 @@ Caso o comando acima não tenha apontado erros, podemos iniciar o serviço nagio
 
 	service nagios start
 
+Nas versões mais recentes do Ubuntu/Debian é possível que o comando acima lance o seguinte erro:
+
+	Failed to start nagios.service: Unit nagios.service failed to load: No such file or directory.
+
+Para corrigir esse erro é necessário copiar o arquivo **/etc/init.d/skeleton** para **/etc/init.d/nagios **utilizando o seguinte comando:
+
+	cp /etc/init.d/skeleton /etc/init.d/nagios
+
+Edite o arquivo **/etc/init.d/nagios**
+
+	nano /etc/init.d/nagios
+
+Adicione as seguintes linhas:
+
+	DESC="Nagios"
+	NAME=nagios
+	DAEMON=/usr/local/nagios/bin/$NAME
+	DAEMON_ARGS="-d /usr/local/nagios/etc/nagios.cfg"
+	PIDFILE=/usr/local/nagios/var/$NAME.lock
+
+Salve e feche o arquivo.
+
+É necessário alterar as permissões do arquivo.
+
+	chmod +x /etc/init.d/nagios
+
+Agora é possível iniciar o serviço nagios utilizando o comando:
+
+	/etc/init.d/nagios start 
+
 ## Acessar a interface web do Nagios ##
 
 Abra seu navegador da web e navegue até **http://{ip-do-server-nagios}/nagios** e digite o nome de usuário como **nagiosadmin** e sua senha que criamos nos passos anteriores.
