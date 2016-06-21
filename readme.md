@@ -112,7 +112,7 @@ O output desse comando deve ser semelhante a:
 lrwxrwxrwx 1 root root 35 Nov 28 16:49 000-default.conf -../sites-available/000-default.conf   
 -rw-r--r-- 1 root root 1679 Nov 28 17:02 nagios.conf 
 
-Crie um conta ***nagiosadmin*** para se autenticar a interface web do Nagios. **Lembre da senha que você definir**, ela será utilizada para logar na interface web.
+Crie uma conta ***nagiosadmin*** para a autenticação na interface web do Nagios. **Lembre da senha que você definir**, ela será utilizada para logar na interface web.
 
 	htpasswd -c /usr/local/nagios/etc/htpasswd.users nagiosadmin
 
@@ -122,7 +122,7 @@ Reinicie o Apache para que as novas configurações tenham efeito.
 
 ### Instalar Nagios Plugins ###
 
-Va para o diretório onde você baixou o nagios plugins, e extraia os arquivos.
+Va para o diretório (provavelmente o **/usr/src/nagios**) onde você baixou o nagios plugins, e extraia os arquivos 
 
 	tar xzf nagios-plugins-2.1.1.tar.gz
 
@@ -198,7 +198,7 @@ Nas versões mais recentes do Ubuntu/Debian é possível que o comando acima lan
 
 	Failed to start nagios.service: Unit nagios.service failed to load: No such file or directory.
 
-Para corrigir esse erro é necessário copiar o arquivo **/etc/init.d/skeleton** para **/etc/init.d/nagios **utilizando o seguinte comando:
+Para corrigir esse erro é necessário copiar o arquivo **/etc/init.d/skeleton** para **/etc/init.d/nagios** utilizando o seguinte comando:
 
 	cp /etc/init.d/skeleton /etc/init.d/nagios
 
