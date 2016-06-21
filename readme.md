@@ -29,11 +29,11 @@ Atualizar o servidor
 
 Instale as dependências do nagios
 
-	apt-get install libgd2-xpm-dev libsnmp-perl libssl-dev openssl build-essential apache2 libapache2-mod-php5
+	apt-get install libgd2-xpm-dev libsnmp-perl libssl-dev openssl build-essential apache2 libapache2-mod-php5 unzip
 
 Crie um novo usuário do ***nagios***
 
-	useradd nagios -g nagios
+	useradd -m nagios
 	passwd nagios
 
 Crie um novo grupo de ***nagcmd*** para permitir que comandos externos sejam enviados através da interface web. Adicione o usuário nagios e o usuário do apache ao grupo.
@@ -96,11 +96,11 @@ A mensagem de erro acima descreve que o nagios está tentando criar o arquivo **
 
 Para tal, execute o seguinte comando no lugar do **make install-webconf**.
 
-	sudo /usr/bin/install -c -m 644 sample-config/httpd.conf /etc/apache2/sites-enabled/nagios.conf
+	/usr/bin/install -c -m 644 sample-config/httpd.conf /etc/apache2/sites-enabled/nagios.conf
 
 Verifique se o **nagios.conf** está no diretório /etc/apache2/sites-enabled.
 
-	sudo ls -l /etc/apache2/sites-enabled/
+	ls -l /etc/apache2/sites-enabled/
 
 O output desse comando deve ser semelhante a:
 
@@ -124,7 +124,7 @@ Va para o diretório onde você baixou o nagios plugins, e extraia os arquivos.
 
 Acesse o diretório extraído:
 
-	cd / nagios-plugins-2.1.1/
+	cd nagios-plugins-2.1.1/
 
 Execute os seguintes comandos um a um para compilar e instalar.
 
