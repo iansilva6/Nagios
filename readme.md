@@ -309,7 +309,7 @@ Por fim, reinicie o serviço do nagios.
 
 	service nagios restart
 
-Aguarde alguns segundos e atualize a página administrativa do nagios no browser, e etão navegue até a sessão de **hosts** no painel da esquerda. Agora, você verá o cliente que foi adicionado recentemente. Click nele para visualizer se tem alguma coisa errada ou algum alerta.
+Aguarde alguns segundos e atualize a página administrativa do nagios no browser, e etão navegue até a seção de **hosts** no painel da esquerda. Agora, você verá o cliente que foi adicionado recentemente. Click nele para visualizer se tem alguma coisa errada ou algum alerta.
 
 ![](http://www.unixmen.com/wp-content/uploads/2015/11/Nagios-Core-Google-Chrome_005.jpg) 
 
@@ -342,6 +342,6 @@ Adicione as seguintes linhas:
 
 	service nagios restart
 
-Aguarde alguns segundos (**90** segundos por padrão), e verifique pelos serviços adicionados (exemplo: ssh) na interface web do nagios. Navegue para a sessão **Services** no menu esquerdo, você verá o serviço **ssh** na lista.
+Aguarde alguns segundos (**90** segundos por padrão), e verifique pelos serviços adicionados (exemplo: ssh) na interface web do nagios. Navegue para a seção **Services** no menu esquerdo, você verá o serviço **ssh** na lista.
 
 ![](http://www.unixmen.com/wp-content/uploads/2015/11/Nagios-Core-Google-Chrome_007.jpg)
