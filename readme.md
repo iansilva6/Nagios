@@ -14,7 +14,6 @@ Outros posts que foram úteis:
 - Monitoração total da infraestrutura de TI
 - Notificações quando problemas surgirem
 - Compartilhar dados de disponibilidade com os stakeholders
-- Detectar violações de segurança
 - Redução de downtime dos ativos
 
 ## Pré-requisitos ###
