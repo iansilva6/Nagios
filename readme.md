@@ -244,7 +244,7 @@ Clique no *localhost* para exibir mais detalhes
 
 É isso, instalamos e configuramos o Nagios!
 
-## Adicionar clintes monitorados ao servidor Nagios ##
+## Adicionar clientes monitorados ao servidor Nagios ##
 
 Agora, vamos adicionar alguns clientes para serem monitorados pelo servidor Nagios.
 Para isso precisamos instalar o **nrpe** e o **nagios-plugin** em nossos alvos de monitoramento.
