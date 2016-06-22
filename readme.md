@@ -306,7 +306,7 @@ Nesse caso, **192.168.1.104** é o ip do meu cliente Nagios e server.unixmen.loc
 
 Por fim, reinicie o serviço do nagios.
 
-	/etc/init.d/nagios start restart
+	/etc/init.d/nagios restart
 
 Aguarde alguns segundos e atualize a página administrativa do nagios no browser, e então navegue até a seção de **hosts** no painel da esquerda. Agora, você verá o cliente que foi adicionado recentemente. Click nele para visualizar se tem alguma coisa errada ou algum alerta.
 
@@ -339,7 +339,7 @@ Adicione as seguintes linhas:
 
  Salve e feche o arquivo. Reinicie o Nagios.
 
-	/etc/init.d/nagios start restart
+	/etc/init.d/nagios restart
 
 Aguarde alguns segundos (**90** segundos por padrão), e verifique pelos serviços adicionados (exemplo: ssh) na interface web do nagios. Navegue para a seção **Services** no menu esquerdo, você verá o serviço **ssh** na lista.
 
