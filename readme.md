@@ -111,7 +111,7 @@ O output desse comando deve ser semelhante a este:
 lrwxrwxrwx 1 root root 35 Nov 28 16:49 000-default.conf -../sites-available/000-default.conf   
 -rw-r--r-- 1 root root 1679 Nov 28 17:02 nagios.conf 
 
-Crie uma conta ***nagiosadmin*** para a autenticação na interface web do Nagios. **Lembre da senha que você definir**, ela será utilizada para logar na interface web.
+Crie uma conta ***nagiosadmin*** para a autenticação na interface web do Nagios. **Lembre-se da senha que você definir**, ela será utilizada para logar na interface web.
 
 	htpasswd -c /usr/local/nagios/etc/htpasswd.users nagiosadmin
 
@@ -308,7 +308,7 @@ Por fim, reinicie o serviço do nagios.
 
 	service nagios restart
 
-Aguarde alguns segundos e atualize a página administrativa do nagios no browser, e etão navegue até a seção de **hosts** no painel da esquerda. Agora, você verá o cliente que foi adicionado recentemente. Click nele para visualizer se tem alguma coisa errada ou algum alerta.
+Aguarde alguns segundos e atualize a página administrativa do nagios no browser, e então navegue até a seção de **hosts** no painel da esquerda. Agora, você verá o cliente que foi adicionado recentemente. Click nele para visualizar se tem alguma coisa errada ou algum alerta.
 
 ![](http://www.unixmen.com/wp-content/uploads/2015/11/Nagios-Core-Google-Chrome_005.jpg) 
 
