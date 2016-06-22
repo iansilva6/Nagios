@@ -136,7 +136,7 @@ Execute os seguintes comandos um a um para compilar e instalar.
 
 ## Configurar o nagios ##
 
-Os arquivos com configurações de exemplo do Nagios estão localizados no diretório **/usr/local/nagios/etc**.Esses arquivos de exemplo devem funcionar bem para uma introdução ao Nagios. No entando, se você quiser, precisará colocar o seu ID e e-mail para receber alertas.
+Os arquivos com configurações de exemplo do Nagios estão localizados no diretório **/usr/local/nagios/etc**.Esses arquivos de exemplo devem funcionar bem para uma introdução ao Nagios. No entanto, se você quiser, precisará colocar o seu ID e e-mail para receber alertas.
 
 Para tal, edite o arquivo de configuração **/usr/local/nagios/etc/objects/contacts.cfg** e altere o e-mail associado ao contato *nagiosadmin*. Este e-mail será onde os alertas serão enviados
 
