@@ -11,12 +11,11 @@ Outros posts que foram úteis:
 
 ## Principais funcionalidades ###
 
-- Monitorar toda sua infraestrutura de TI.
-- Saber imediatamente quando problemas surgirem
-- Compartilhar dados de disponibilidade com as partes interessadas
+- Monitoração total da infraestrutura de TI
+- Notificações quando problemas surgirem
+- Compartilhar dados de disponibilidade com os stakeholders
 - Detectar violações de segurança
-- Planos e orçamento para atualizações na infraestrutura de TI.
-- Reduza as perdas de tempo de inatividade e negócios.
+- Redução de downtime dos ativos
 
 ## Pré-requisitos ###
 
